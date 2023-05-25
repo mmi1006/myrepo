@@ -17,7 +17,9 @@
 
 
 import streamlit as st
-import Suma_prueba
+
+def sumar(x,y):
+    return x+y
 
 def main():
     st.title("Interfaz de Mi Función Específica")
@@ -29,7 +31,7 @@ def main():
     # Botón para ejecutar la función
     if st.button("Ejecutar"):
         # Llama a la función y obtén el resultado
-        resultado = Suma_prueba(input1, input2)
+        resultado = sumar(input1, input2)
 
         # Muestra el resultado
         st.write("El resultado es:", resultado)
